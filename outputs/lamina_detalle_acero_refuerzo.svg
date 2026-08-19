@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+    </marker>
+    <pattern id="aggregate" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="7" r="1.4" fill="#111"/>
+      <circle cx="17" cy="13" r="1.1" fill="#111"/>
+      <circle cx="9" cy="23" r="1.2" fill="#111"/>
+      <circle cx="24" cy="4" r="1" fill="#111"/>
+    </pattern>
+    <style>
+      .ink{stroke:#111;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#111;fill:none;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+      .bar{stroke:#111;fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .rib{stroke:#111;fill:none;stroke-width:1.2;stroke-linecap:round}
+      .txt{font-family:Arial,Helvetica,sans-serif;fill:#111;font-size:20px;letter-spacing:.4px}
+      .small{font-family:Arial,Helvetica,sans-serif;fill:#111;font-size:17px;letter-spacing:.25px}
+      .title{font-family:Arial,Helvetica,sans-serif;fill:#111;font-size:25px;font-weight:700;letter-spacing:.8px}
+      .panel{stroke:#111;fill:#fff;stroke-width:1.5}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1000" fill="#fff"/>
+  <rect x="28" y="28" width="1544" height="944" class="ink"/>
+  <text x="800" y="68" text-anchor="middle" class="title">DETALLE ESTRUCTURAL — ACERO DE REFUERZO EN CONCRETO ARMADO</text>
+  <line x1="55" y1="92" x2="1545" y2="92" class="thin"/>
+
+  <!-- Barra recta -->
+  <g transform="translate(55 115)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">BARRA RECTA</text>
+    <line x1="65" y1="188" x2="415" y2="188" class="bar"/>
+    <g transform="translate(230 188)">
+      <line x1="0" y1="-4" x2="0" y2="4" class="rib"/>
+      <line x1="18" y1="-4" x2="18" y2="4" class="rib"/>
+      <line x1="36" y1="-4" x2="36" y2="4" class="rib"/>
+      <line x1="54" y1="-4" x2="54" y2="4" class="rib"/>
+      <line x1="72" y1="-4" x2="72" y2="4" class="rib"/>
+    </g>
+    <line x1="236" y1="178" x2="236" y2="198" class="thin"/>
+    <line x1="246" y1="178" x2="246" y2="198" class="thin"/>
+    <line x1="236" y1="178" x2="246" y2="178" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="241" y="160" text-anchor="middle" class="txt">db</text>
+    <line x1="65" y1="245" x2="415" y2="245" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="65" y1="232" x2="65" y2="258" class="thin"/>
+    <line x1="415" y1="232" x2="415" y2="258" class="thin"/>
+    <text x="240" y="279" text-anchor="middle" class="small">diámetro nominal: db</text>
+  </g>
+
+  <!-- Gancho 90 -->
+  <g transform="translate(560 115)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">GANCHO 90°</text>
+    <path d="M105 270 L105 160 Q105 130 135 130 L345 130" class="bar"/>
+    <path d="M105 160 Q105 130 135 130" class="ink"/>
+    <path d="M127 130 A22 22 0 0 0 105 152" class="thin"/>
+    <text x="145" y="106" class="txt">D</text>
+    <line x1="105" y1="130" x2="105" y2="92" class="thin"/>
+    <line x1="127" y1="130" x2="127" y2="92" class="thin"/>
+    <line x1="105" y1="92" x2="127" y2="92" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="135" y1="78" x2="345" y2="78" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="135" y1="88" x2="135" y2="124" class="thin"/>
+    <line x1="345" y1="88" x2="345" y2="124" class="thin"/>
+    <text x="240" y="62" text-anchor="middle" class="txt">extensión del gancho</text>
+    <line x1="75" y1="160" x2="75" y2="270" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Gancho 135 -->
+  <g transform="translate(1065 115)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">GANCHO 135°</text>
+    <path d="M105 275 L105 175 Q105 145 132 132 L326 220" class="bar"/>
+    <path d="M105 175 Q105 145 132 132" class="ink"/>
+    <path d="M126 144 A25 25 0 0 0 108 167" class="thin"/>
+    <text x="148" y="108" class="txt">D</text>
+    <line x1="105" y1="132" x2="105" y2="91" class="thin"/>
+    <line x1="130" y1="143" x2="130" y2="91" class="thin"/>
+    <line x1="105" y1="91" x2="130" y2="91" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="145" y1="105" x2="326" y2="188" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="278" y="145" text-anchor="middle" class="txt" transform="rotate(24 278 145)">extensión del gancho</text>
+  </g>
+
+  <!-- Gancho 180 -->
+  <g transform="translate(55 530)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">GANCHO 180°</text>
+    <path d="M90 260 L90 175 A65 65 0 0 1 220 175 L220 245" class="bar"/>
+    <path d="M90 175 A65 65 0 0 1 220 175" class="ink"/>
+    <path d="M107 175 A48 48 0 0 1 203 175" class="thin"/>
+    <text x="154" y="105" text-anchor="middle" class="txt">D</text>
+    <line x1="90" y1="175" x2="90" y2="90" class="thin"/>
+    <line x1="220" y1="175" x2="220" y2="90" class="thin"/>
+    <line x1="90" y1="90" x2="220" y2="90" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="155" y="72" text-anchor="middle" class="txt">D</text>
+    <line x1="220" y1="245" x2="365" y2="245" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="220" y1="232" x2="220" y2="258" class="thin"/>
+    <line x1="365" y1="232" x2="365" y2="258" class="thin"/>
+    <text x="293" y="279" text-anchor="middle" class="txt">extensión del gancho</text>
+  </g>
+
+  <!-- Empalme por traslape -->
+  <g transform="translate(560 530)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">EMPALME POR TRASLAPE</text>
+    <rect x="52" y="94" width="376" height="205" fill="url(#aggregate)" stroke="#111" stroke-width="2"/>
+    <line x1="74" y1="158" x2="358" y2="158" class="bar"/>
+    <line x1="168" y1="235" x2="410" y2="235" class="bar"/>
+    <g class="rib">
+      <line x1="130" y1="153" x2="130" y2="163"/><line x1="150" y1="153" x2="150" y2="163"/><line x1="170" y1="153" x2="170" y2="163"/><line x1="190" y1="153" x2="190" y2="163"/><line x1="210" y1="153" x2="210" y2="163"/><line x1="230" y1="153" x2="230" y2="163"/><line x1="250" y1="153" x2="250" y2="163"/><line x1="270" y1="153" x2="270" y2="163"/><line x1="290" y1="153" x2="290" y2="163"/>
+      <line x1="220" y1="230" x2="220" y2="240"/><line x1="240" y1="230" x2="240" y2="240"/><line x1="260" y1="230" x2="260" y2="240"/><line x1="280" y1="230" x2="280" y2="240"/><line x1="300" y1="230" x2="300" y2="240"/><line x1="320" y1="230" x2="320" y2="240"/><line x1="340" y1="230" x2="340" y2="240"/><line x1="360" y1="230" x2="360" y2="240"/>
+    </g>
+    <line x1="168" y1="320" x2="358" y2="320" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="168" y1="304" x2="168" y2="333" class="thin"/><line x1="358" y1="304" x2="358" y2="333" class="thin"/>
+    <text x="263" y="355" text-anchor="middle" class="txt">lt</text>
+  </g>
+
+  <!-- Longitud de desarrollo -->
+  <g transform="translate(1065 530)">
+    <rect width="480" height="385" class="panel"/>
+    <text x="24" y="38" class="title">LONGITUD DE DESARROLLO</text>
+    <rect x="58" y="86" width="365" height="225" fill="url(#aggregate)" stroke="#111" stroke-width="2"/>
+    <line x1="100" y1="200" x2="367" y2="200" class="bar"/>
+    <g class="rib">
+      <line x1="150" y1="195" x2="150" y2="205"/><line x1="170" y1="195" x2="170" y2="205"/><line x1="190" y1="195" x2="190" y2="205"/><line x1="210" y1="195" x2="210" y2="205"/><line x1="230" y1="195" x2="230" y2="205"/><line x1="250" y1="195" x2="250" y2="205"/><line x1="270" y1="195" x2="270" y2="205"/>
+    </g>
+    <line x1="100" y1="136" x2="367" y2="136" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="100" y1="148" x2="100" y2="192" class="thin"/><line x1="367" y1="148" x2="367" y2="192" class="thin"/>
+    <text x="233" y="116" text-anchor="middle" class="txt">ld</text>
+    <line x1="80" y1="200" x2="80" y2="310" class="thin" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="72" y="260" text-anchor="middle" class="small" transform="rotate(-90 72 260)">anclaje</text>
+  </g>
+
+  <line x1="55" y1="940" x2="1545" y2="940" class="thin"/>
+  <text x="800" y="962" text-anchor="middle" class="small">ESQUEMA EDUCATIVO — SÍMBOLOS: db · D · extensión del gancho · lt · ld</text>
+</svg>

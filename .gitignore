@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+.streamlit/secrets.toml
+node_modules/
+work/
+*.inspect.ndjson
+outputs/*.xlsx
+outputs/*.pdf
+outputs/*.ndjson
+E060 Acero - Usuario.xlsx
